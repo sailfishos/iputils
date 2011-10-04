@@ -1,0 +1,13 @@
+Index: iputils-s20071127/rdisc.c
+===================================================================
+--- iputils-s20071127.orig/rdisc.c
++++ iputils-s20071127/rdisc.c
+@@ -232,7 +232,7 @@ static __inline__ int ismulticast(struct
+ 
+ static void prusage(void)
+ {
+-	(void) fprintf(stderr, usage);
++	(void) fprintf(stderr, "%s", usage);
+ 	exit(1);
+ }
+ 
